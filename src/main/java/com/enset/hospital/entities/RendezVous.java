@@ -12,8 +12,8 @@ import java.util.Date;
 @AllArgsConstructor
 @Data
 public class RendezVous {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @Id
+    private String id;
     private Date date;
     @Enumerated(EnumType.STRING)
     private StatusRDV status;
